@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=h918
+DEVICE=us996
 DEVICE_COMMON=v20-common
 PLATFORM_COMMON=msm8996-common
 VENDOR=lge

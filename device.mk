@@ -18,18 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/h918/h918-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/us996/us996-vendor.mk)
 
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
 
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
-
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_tmo_us.conf:system/etc/sensors/sensor_def_variable.conf
+    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_nao_us.conf:system/etc/sensors/sensor_def_variable.conf
 
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
