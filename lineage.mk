@@ -11,5 +11,6 @@ PRODUCT_NAME := lineage_us996
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="v20" \
     PRODUCT_NAME="elsa_nao_us" \
-    BUILD_FINGERPRINT="lge/elsa_nao_us/elsa:7.0/NRD90M/162831845a3a3:user/release-keys" \
     PRIVATE_BUILD_DESC="elsa_nao_us-user 7.0 NRD90M 162831845a3a3 release-keys"
+
+BUILD_FINGERPRINT := "lge/elsa_nao_us/elsa:7.0/NRD90M/162831845a3a3:user/release-keys"
