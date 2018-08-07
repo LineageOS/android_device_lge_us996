@@ -20,6 +20,7 @@ DEVICE_PATH := device/lge/us996
 -include device/lge/v20-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := us996
+TARGET_SYSTEM_PARTITION := /dev/sda18
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_us996_defconfig
