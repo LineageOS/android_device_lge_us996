@@ -13,17 +13,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from h815 device
 $(call inherit-product, device/lge/us996/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := us996
-PRODUCT_NAME := full_us996
+PRODUCT_NAME := lineage_us996
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-US996
 PRODUCT_MANUFACTURER := LGE
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="elsa" \
+    PRODUCT_DEVICE="elsa" \
+    PRODUCT_NAME="elsa_nao_us" \
+    PRIVATE_BUILD_DESC="elsa_nao_us-user 7.0 NRD90M 162831845a3a3 release-keys"
+
+BUILD_FINGERPRINT := "lge/elsa_nao_us/elsa:7.0/NRD90M/162831845a3a3:user/release-keys"
