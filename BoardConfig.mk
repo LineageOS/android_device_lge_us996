@@ -19,7 +19,7 @@ DEVICE_PATH := device/lge/us996
 # inherit from common v20
 -include device/lge/v20-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := us996
+TARGET_OTA_ASSERT_DEVICE := us996,elsa
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_us996_defconfig
