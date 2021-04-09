@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/us996/us996-vendor.mk)
+$(call inherit-product, vendor/lge/us996/us996-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
